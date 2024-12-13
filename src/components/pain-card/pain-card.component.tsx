@@ -26,7 +26,9 @@ export const PainCard = ({
         </section>
       )}
       <section className="flex justify-end">
-        <LucideTrash2 onClick={() => handleDelete(pain)} />
+        <div data-testid="remove-button" onClick={() => handleDelete(pain)}>
+          <LucideTrash2 />
+        </div>
       </section>
     </div>
   )
