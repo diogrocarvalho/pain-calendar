@@ -6,7 +6,7 @@ import App from './App'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/pain-calendar">
       <Routes>
         <Route path="/" element={<App />} />
       </Routes>
