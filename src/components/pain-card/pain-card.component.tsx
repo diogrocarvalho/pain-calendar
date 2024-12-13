@@ -11,7 +11,7 @@ export const PainCard = ({
   handleDelete: (pain: Pain) => void
 }): JSX.Element => {
   return (
-    <div className=" w-full border my-2 py-2 px-4 shadow-md rounded-lg text-lg font-bold">
+    <div className="w-full border my-2 py-2 px-4 shadow-md rounded-lg text-sm font-bold">
       <div className="flex justify-between">
         <span className="flex flex-col">
           <span className="mb-1">Nível de dor</span>
@@ -26,8 +26,12 @@ export const PainCard = ({
         </section>
       )}
       <section className="flex justify-end">
-        <div data-testid="remove-button" onClick={() => handleDelete(pain)}>
-          <LucideTrash2 />
+        <div
+          className="cursor-pointer py-1"
+          data-testid="remove-button"
+          onClick={() => handleDelete(pain)}
+        >
+          <LucideTrash2 size={20} />
         </div>
       </section>
     </div>

@@ -9,7 +9,7 @@ export const PainList = ({
   handleDelete: (pain: Pain) => void
 }) => {
   return (
-    <div className="mt-4">
+    <div className="mt-4 h-96 overflow-y-scroll">
       {pains?.length > 0 &&
         pains.map((pain) => (
           <PainCard handleDelete={handleDelete} key={pain.id} pain={pain} />
