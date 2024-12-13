@@ -2,14 +2,14 @@
   "name": "pain-calendar",
   "homepage": "https://diogocarvalho.github.io/pain-calendar/",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "bun run build",
     "deploy": "gh-pages -d build",
     "test": "vitest",
     "coverage": "vitest run --coverage"
