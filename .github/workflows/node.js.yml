@@ -31,7 +31,7 @@ jobs:
     #    node-version: ${{ matrix.node-version }}
     #    cache: 'npm'
     - run: bun install
-    - run: bunx jest --coverage
+    - run: bun run coverage
 
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
